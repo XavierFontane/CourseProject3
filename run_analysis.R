@@ -33,7 +33,7 @@ run_analysis <- function(){
   result <- summarise_each(Grouped_data, funs(mean(.)))
   
   #Finally save the results to file
-  write.table(result, "tidy_accelerometer_data.txt")
+  write.table(result, "tidy_accelerometer_data.txt", row.names=FALSE)
   
 }
 
